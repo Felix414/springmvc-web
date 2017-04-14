@@ -9,15 +9,13 @@ import javax.servlet.http.HttpServletResponse;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.servlet.ModelAndView;
 
 import com.me.java.inter.UserInterface;
 import com.me.java.model.Article;
 import com.me.java.util.PageInfo;
 
-
-@RequestMapping("/home")
 @Controller
+@RequestMapping("/home")
 public class HomeController {
 	@Autowired
 	private UserInterface userInterface;
