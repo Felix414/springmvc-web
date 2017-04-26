@@ -29,7 +29,7 @@
 	    </mvc:interceptor>   
 	</mvc:interceptors>
     <!-- 分解配置 data.properites -->  
-    <context:property-placeholder location="classpath:data.properties" />  
+    <context:property-placeholder location="classpath:database.properties" />  
       
     <!-- 数据源c3p0   
     <bean id="dataSource" class="com.mchange.v2.c3p0.ComboPooledDataSource">  
