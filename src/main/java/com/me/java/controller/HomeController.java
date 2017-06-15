@@ -40,7 +40,7 @@ public class HomeController {
 		PageInfo page = new PageInfo();
 		page.setShowCount(pageSize);
 		page.setCurrentResult(currentResult);
-		List<Article> articles=userInterface.selectArticleListPage(page,1);
+		List<Article> articles = userInterface.selectArticleListPage(page,1);
 		
 		System.out.println(page);
 		
@@ -61,7 +61,7 @@ public class HomeController {
 		String pageStr = "";
 
 		pageStr=String.format("<a href=\"%s\">上一页</a>&nbsp;&nbsp;&nbsp;&nbsp;<a href=\"%s\">下一页</a>",
-						request.getRequestURI()+"?page="+(currentPage-1),request.getRequestURI()+"?page="+(currentPage+1) );
+						request.getRequestURI()+"?page="+(currentPage-1), request.getRequestURI()+"?page="+(currentPage+1) );
 
 		model.put("articles", articles);
 		model.put("pageStr", pageStr);
