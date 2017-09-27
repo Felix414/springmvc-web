@@ -25,6 +25,11 @@ public class HomeController {
 		return "home/index";
 	}
 	
+	@RequestMapping("/login")
+	public String login() {
+		return "home/login";
+	}
+	
 	@RequestMapping("/pagelist")
 	public String pageList(HttpServletRequest request, HttpServletResponse response, Map<String, Object> model) {
 		int currentPage = request.getParameter("page")==null?1:Integer.parseInt(request.getParameter("page"));
